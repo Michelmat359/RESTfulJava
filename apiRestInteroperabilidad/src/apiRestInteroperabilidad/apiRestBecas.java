@@ -1,4 +1,4 @@
-package apiRestInteroperabilidad2;
+package apiRestInteroperabilidad;
 
 import org.restlet.Application;
 import org.restlet.Restlet;
@@ -9,7 +9,7 @@ public class apiRestBecas extends Application{
 	@Override
 	public Restlet createInboundRoot() {
 		Router router = new Router();
-		router.attach("/services", restAyudas.class);
+		router.attach("/becas/{ciudadano_dni}", restAyudaCiudadano.class);
 		return router;
 	}
 

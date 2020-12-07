@@ -1,4 +1,4 @@
-package apiRestInteroperabilidad2;
+package apiRestInteroperabilidad;
 
 import java.io.BufferedReader;
 import java.io.IOException;
